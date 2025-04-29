@@ -1,0 +1,6 @@
+<h1>Photo Web Map Readme</h1>
+<p>The intended use of this Leaflet web map is to spatially navigate a local directory of gps tagged photos.</p>
+<p>Extract photo location data (ie. lon, lat), and other meta data (eg. date, time, path), from photo files using the Python script <code>data_extract.py</code>. Within this script, specify the local directory containing photos using the variable <code>image_dir</code> and a directory in which to save the resulting geojson file, variable <code>geojson_dir</code>.</p>
+<p>Move/Save the resulting <code>photo_data.geojson</code> output file to the project directory, <code>./photo-web-map/</code> (this file is included in the <code>.gitignore</code> file for privacy considerations).</p>
+<p>Start a simple http server with Python using a command line terminal (eg. Git Bash). From the photo directory, run the command <code>python -m http.server</code> (Windows).</p>
+<p>Open the <code>index.html</code> file with Visual Studio Code and, using the Live Server extension, run a local server. This action will open the webpage, with functioning web map, in the systems default browser.</p>
